@@ -13,6 +13,7 @@ namespace Selenium_Extensions
     {
         public static string RemoveInvalidCharacters(this string str)
         {
+            //Comment added from feature1 branch
             char[] permittedSpecialChars = new char[] { '_' };
             var stringArray = str.Where(c => char.IsLetterOrDigit(c) || permittedSpecialChars.Contains(c)).ToArray();
             return new string(stringArray);
